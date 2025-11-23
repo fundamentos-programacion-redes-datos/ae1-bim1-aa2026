@@ -12,9 +12,9 @@ Un librería desea optimizar su sistema de facturación y análisis de ventas. P
 ## Cálculo de descuentos:
 
 * Si se compra 1 libro, se aplica un 5% de descuento.
-* Si se compran 2 o 3 trajes, se aplica un 10% de descuento.
-* Si se compran 4 o 5 trajes, se aplica un 30% de descuento.
-* Si se compran más de 6 trajes, se aplica un 40% de descuento.
+* Si se compran 2 o 3 libros, se aplica un 10% de descuento.
+* Si se compran 4 o 5 libros, se aplica un 30% de descuento.
+* Si se compran más de 6 libros, se aplica un 40% de descuento.
 
 ## Cálculo de totales:
 
