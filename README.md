@@ -1,4 +1,4 @@
-# ae1-bim1-octubre25-febrero26
+# ae1-bim1-abril-agosto-2026
 
 # Problemática
 Un librería desea optimizar su sistema de facturación y análisis de ventas. Para ello, se requiere desarrollar un programa que cumpla con los siguientes requerimientos:
