@@ -1,42 +1,57 @@
 # ae1-bim1-abril-agosto-2026
 
 # Problemática
-Un librería desea optimizar su sistema de facturación y análisis de ventas. Para ello, se requiere desarrollar un programa que cumpla con los siguientes requerimientos:
+
+Un cine desea optimizar su sistema de facturación y análisis de ventas de entradas. Para ello, se requiere desarrollar un programa que cumpla con los siguientes requisitos:
+
 
 ## Entrada de datos:
 
 * Ingresar el nombre y apellido del cliente.
-* Luego, ingresará la cantidad de libros a comprar por el cliente.
-* Cada libro tiene un mismo precio unitario, que también debe ser ingresado por el usuario.
+* Ingresar la cantidad de entradas que desea comprar el cliente.
+* Cada entrada tiene un mismo precio unitario, que también debe ser ingresado por el usuario (por ejemplo, entrada normal, entrada 3D, etc.).
 
 ## Cálculo de descuentos:
 
-* Si se compra 1 libro, se aplica un 5% de descuento.
-* Si se compran 2 o 3 libros, se aplica un 10% de descuento.
-* Si se compran 4 o 5 libros, se aplica un 30% de descuento.
-* Si se compran más de 6 libros, se aplica un 40% de descuento.
+* El cine aplica descuentos según la cantidad de entradas compradas en una misma compra:
+* Si se compra 1 entrada, se aplica un 10% de descuento.
+* Si se compran 2 o 3 entradas, se aplica un 20% de descuento.
+* Si se compran 4 o 5 entradas, se aplica un 30% de descuento.
+* Si se compran 6 o más entradas, se aplica un 40% de descuento.
 
 ## Cálculo de totales:
 
-* Se debe calcular el subtotal antes del descuento.
-* Se debe calcular el monto del descuento aplicado.
-* Se debe calcular el total a pagar después del descuento.
+Para cada compra registrada se debe:
+
+* Calcular el subtotal antes del descuento (cantidad de entradas × precio unitario).
+* Calcular el monto del descuento aplicado.
+* Calcular el total a pagar después de aplicar el descuento.
 
 ## Registro de múltiples clientes:
 
-* El sistema debe permitir registrar la compra de varios clientes, usando un ciclo while. Antes de iniciar el ciclo se debe tener la precaución de preguntar, cuantas ventas desea realizar.
+* El sistema debe permitir registrar la compra de entradas de varios clientes, usando un ciclo while.
+* Antes de iniciar el ciclo se debe preguntar cuántas ventas se van a registrar (número de clientes).
+* Para cada cliente se realiza todo el proceso: entrada de datos, cálculo de descuentos y cálculo de totales.
 
 ## Almacenamiento de datos en estructuras de datos adecuadas:
 
-* Utilizar un arreglo unidimensional para registrar los totales de cada cliente.
-* Utilizar un arreglo unidimensional para almacenar los nombres
-* Utilizar un arreglo unidimensional para almacenar los apellidos
-* Utilizar un arreglo unidimensional para almacenar los cantidad de libros
-* Utilizar un arreglo unidimensional para almacenar el precio unitario de la venta
+Se deben usar arreglos unidimensionales paralelos para almacenar la información de cada venta:
 
-Las posiciones se corresponden, la posición 0 de cada arreglo, darian una registro completo
+* Un arreglo para registrar el nombre de cada cliente.
+* Un arreglo para registrar el apellido de cada cliente.
+* Un arreglo para registrar la cantidad de entradas compradas.
+* Un arreglo para registrar el precio unitario de la entrada en esa venta.
+* Un arreglo para registrar el total a pagar de cada cliente.
 
-Luego de finalizar el ingreso y calculo de datos se debe presentar:
-* Mostrar la información de cada compra registrada.
-* Calcular y mostrar el promedio de ventas realizadas.
-* Determinar la venta más alta y la más baja.
+Las posiciones se corresponden:
+
+* La posición 0 de cada arreglo representa la primera venta,
+* La posición 1 representa la segunda venta, y así sucesivamente.
+
+## Reporte Final
+
+Al finalizar el registro y el cálculo de datos, el programa debe:
+
+* Mostrar la información detallada de cada compra registrada (nombre, apellido, cantidad de entradas, precio unitario, total a pagar).
+* Calcular y mostrar el promedio de ventas realizadas (promedio de los totales).
+* Determinar y mostrar la venta de mayor monto y la venta de menor monto.
